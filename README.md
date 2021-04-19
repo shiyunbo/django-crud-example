@@ -4,9 +4,11 @@ We will use Django and functional based views to develop a simple application to
 
 ### Demo
 
+If you cannot see the animated gif below, please download task_crud.gif and open it in our browser. 
+
 ![task_crud](task_crud.gif)
 
-### Step 1: create a task app and add it to INSTALLED_APPs
+### Step 1: create a task app and add it to INSTALLED_APPS
 
 First of all, use `python manage.py startapp tasks` to create a new app named "tasks" and then add it to INSTALLED_APPS in `settings.py`.
 
@@ -68,7 +70,7 @@ class TaskForm(forms.ModelForm):
         fields = "__all__"
 ```
 
-### Step 3:  Write URLConfs and Associated Functional Based Views
+### Step 3:  Write URLConfs and associated functional based views
 
 We will create 5 urls and 5 associated functional based views to deal with the CRUD activities. Please bear in mind that we need 2 views for the Retrieve activities: one for retrieving a list and the other for retrieving a single object.
 
@@ -223,7 +225,7 @@ We only need to create 3 templates: `task_list.html`, `task_detail.html` and `ta
 </html>
 ```
 
-### Step 5:  Run your projects and test it
+### Step 5:  Run your project and test it
 
 ```
 python manage.py makemigrations
